@@ -1,7 +1,316 @@
-.index__h1 {
-  color: #00cc99;
-  font-size: 20px;
-  font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Lato&family=Noto+Sans+TC&family=Roboto&family=Rubik&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html, body {
+  margin: 0 auto;
+  font-family: 'Azeret Mono', monospace, 'Noto Sans TC', sans-serif;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: auto;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2D2D2D;
+  position: relative;
+}
+
+nav .navbar {
+  padding-right: 12px;
+}
+
+nav .navbar a {
+  color: white;
+  padding-right: 50px;
+}
+
+nav .navbar span {
+  font-size: 16px;
+}
+
+nav .logo {
+  padding-left: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 50%;
+}
+
+nav img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 24px;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav span {
+  padding-right: 12px;
+}
+
+.navbar-mobile {
+  background-color: #2D2D2D;
+  width: 100%;
+}
+
+.navbar-mobile li {
+  width: 100%;
+}
+
+.navbar-mobile a {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-mobile a p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-mobile ul {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-mobile span {
+  font-size: 16px;
+}
+
+nav::before {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #62DB54;
+  bottom: 0;
+  width: 50%;
+}
+
+nav::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #09ACF5;
+  bottom: 0;
+  width: 50%;
+  left: 50%;
+}
+
+.menu {
+  color: #62DB54;
+}
+
+.menu span {
+  cursor: pointer;
+}
+
+@media (min-width: 756px) {
+  nav img {
+    height: 42px;
+  }
+  nav .logo {
+    padding-left: 60px;
+    padding-right: 12px;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.banner {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/bg_home.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  width: 100%;
+}
+
+.banner-phone {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week6-202207/bg_home_mobile.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 336px;
+  width: 100%;
+}
+
+.gradient-text {
+  /* Create the gradient. */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-text {
+  padding: 51px 12px;
+  position: relative;
+  border: 1px solid #ffffff;
+}
+
+.banner-text .dot-topright {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.banner-text .dot-topleft {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.banner-text .dot-bottomright {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.banner-text .dot-bottomleft {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+
+.banner-text h1 {
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+}
+
+.banner-text h2 {
+  margin-top: 18px;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  line-height: 1.2;
+}
+
+.banner-text p {
+  color: #fff;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.row {
+  padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .banner-text h1 {
+    font-size: 22px;
+  }
+  .banner-text h2 {
+    font-size: 22px;
+  }
+  .banner-text p {
+    font-size: 16px;
+  }
+}
+
+.intro {
+  height: 424px;
+  background-color: #2D2D2D;
+}
+
+.intro span {
+  font-size: 50px;
+}
+
+.intro p {
+  text-align: center;
+}
+
+.intro .intro-title {
+  text-align: left;
 }
 
 /*# sourceMappingURL=all.css.map */

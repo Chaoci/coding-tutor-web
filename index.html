@@ -5,109 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boostrap Index</title>
+    <title>程式家教week6</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="./assets/style/bootstrap.css">
     <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <nav>
+      <div class="logo">
+        <a class="lg-logo d-none d-md-block" href="index.html"><img src="https://raw.githubusercontent.com/Chaoci/coding-tutor-web/fbb61f39d7150b47adf70ddc79cb432a9b33a0de/app/assets/images/week6-202207/logo.svg" alt="coding-home">
+        </a>
+        <a class="sm-logo d-md-none" href="index.html">
+          <img src="https://raw.githubusercontent.com/Chaoci/coding-tutor-web/fbb61f39d7150b47adf70ddc79cb432a9b33a0de/app/assets/images/week6-202207/logo2.svg" alt="small-logo">
+        </a>
+      </div>
+      <div class="w-50 d-lg-none d-flex align-items-center justify-content-end menu">
+      <span class="material-icons bars" id="menu">
+        drag_handle
+        </span>
+      </div>
+      <div class="navbar w-50 d-flex justify-content-end d-none d-lg-flex">
+        <ul class="d-flex align-items-center">
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">課程介紹</a></li>
+          <li><a class="d-flex align-items-center" href="#"><span class="material-icons">account_circle</span>登入</a></li>
+        </ul>
+      </div>
+  </nav>
+  <div class="navbar-mobile d-none">
+    <ul class="d-flex flex-column align-items-center justify-content-center">
+      <li><a href="#1"><p>首頁</p></a></li>
+      <li><a href="#2"><p>課程介紹</p></a></li>
+      <li><a href="#3"><p><span class="material-icons d-inline">account_circle</span>登入</p></a></li>
+    </ul>
+  </div>
+      <main>
+    <section class="banner d-none d-md-block">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="banner-text col-md-6 col-auto">
+          <div class="dot-topright"></div>
+          <div class="dot-topleft"></div>
+          <div class="dot-bottomright"></div>
+          <div class="dot-bottomleft"></div>
+          <h1 class="gradient-text">全台最豐富的程式家教</h1>
+          <h2>在實踐中化理想為現實</h2>
+          <p>全台最專業師資｜到府程式家教｜客製化課程</p>
         </div>
       </div>
-    </nav>
-
-    
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </section>
+    <!-- mobile banner-->
+    <section class="banner-phone d-md-none">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="banner-text col-md-6 col-auto">
+          <div class="dot-topright"></div>
+          <div class="dot-topleft"></div>
+          <div class="dot-bottomright"></div>
+          <div class="dot-bottomleft"></div>
+          <h1 class="gradient-text">全台最豐富的程式家教</h1>
+          <h2>在實踐中化理想為現實</h2>
+          <p>全台最專業師資｜到府程式家教｜客製化課程</p>
+        </div>
       </div>
-      <div class="modal-body">
-        ...
+    </section>
+    <section class="intro">
+      <div class="row">
+        <div class="col-md-3"><p class="intro-title">手把手帶你<br>親自到家教到會</p></div>
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <span class="material-icons">
+            code
+            </span>
+          <h3>超過 100 種專業課程</h3>
+          <p>學習標準化的電腦形式語言<br>培養運算思維和邏輯素養</p>
+        </div>
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <span class="material-icons">
+            rocket_launch
+            </span>
+          <h3>高效學習</h3>
+          <p>客製化專屬課表<br>讓學習變簡單</p>
+        </div>
+        <div class="col-md-3 d-flex flex-column justify-content-center align-items-center">
+          <span class="material-icons gradient-text">
+            place
+            </span>
+          <h3>指定地點</h3>
+          <p>專業老師到你指定的地點<br>一對一高效學習</p>
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+    </section>
+  </main>
 
 
-    <footer class="footer">
-      footer
-    </footer>
 
     <script src="./assets/js/vendors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
 
