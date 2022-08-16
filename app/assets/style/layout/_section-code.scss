@@ -1,0 +1,39 @@
+.code{
+    background: #2D2D2D;
+}
+.code-genre{
+    padding-left: 24px;
+    margin-top: 48px;
+    padding-bottom: 80px;
+}
+.b-padding{
+    padding:24px 32px;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #2d2d2d;
+    &:hover{
+        background: #2d2d2d;
+    }
+}
+.code-title{
+    @include title;
+    position:relative;
+    @include title_bottom_line;
+}
+
+@media (max-width:768px){
+    .code-title{
+        font-size: 22px;
+        padding-top: 40px;
+    }
+    .code-genre{
+        padding-bottom: 40px;
+        padding-left: 17px;
+        margin-top: 26px;
+    }
+    .b-padding{
+        padding: 16px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

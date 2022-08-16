@@ -1,5 +1,8 @@
 @import './layout/_base.scss';
+@import './layout/mixin';
 @import './layout/_nav.scss';
 @import './layout/section-banner';
 @import './layout/intro';
 @import './layout/section-course';
+@import './layout/section-code';
+@import './layout/section-teacher';

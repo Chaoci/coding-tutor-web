@@ -1,0 +1,83 @@
+@mixin teacher_card {
+    background-color: #2D2D2D;
+    border-radius: 20px;
+    &:hover{
+        border:2px solid $lightgreen;
+        cursor:pointer;
+        .teacher-text{
+            padding-right:22px;
+            padding-left:22px;
+    }
+    figure{
+        text-align: center;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    figcaption{
+        font-size: 16px;
+        line-height: 24px;
+        color:gray;
+    }
+    h4{
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .teacher-text{
+        border-bottom:1px solid gray;
+        padding-bottom: 32px;
+        padding-top:24px;
+        padding-right:24px;
+        padding-left:24px;
+    }
+    .color-text{
+        color:$lightgreen;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 37px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        color:lightgray;
+    }
+}
+@mixin teacher_padding{
+    padding-top:24px;
+    padding-bottom:16px;
+}
+.teacher{
+    background-color:#000000 ;
+    color:white;
+    padding-top:80px;
+    padding-bottom:80px;
+}
+
+.teacher-card1{
+    @include teacher_card;
+    @include teacher_padding;
+}
+.teacher-card2{
+    @include teacher_card;
+    @include teacher_padding;
+    .color-text{              //adjust the different margin
+        margin-top:8px;
+    }
+}
+.teacher-card3{
+    @include teacher_card;
+    @include teacher_padding;
+    .color-text{              //adjust the different margin
+        margin-top:8px;
+    }
+}
+.teacher-card4{
+    @include teacher_card;
+    @include teacher_padding;
+    .color-text{              //adjust the different margin
+        margin-top:8px;
+    }
+}

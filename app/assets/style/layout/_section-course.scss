@@ -15,48 +15,6 @@
     cursor:default;
 }
 
-@mixin padding{
-    padding: 56px;
-    position:relative;
-}
-@mixin border {
-    border:1px solid white;
-    border-radius: 10px;
-}
-@mixin number{
-    color:$lightgreen;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    position: absolute;
-    width: 78px;
-    height: 56px;
-    top:-35px;
-    left:48px;
-    background-color: #1C1C1C;
-    padding:8px;
-}
-@mixin title_bottom_line{
-    &::before{
-        content:"";
-        width: 25px;
-        height: 4px;
-        position:absolute;
-        bottom: 0;
-        left:50%;
-        background-color: $lightgreen;
-    }
-    &::after{
-        content:"";
-        width: 25px;
-        height: 4px;
-        position:absolute;
-        bottom: 0;
-        right:50%;
-        background-color: $lightgreen;
-    }
-}
-
 .course-area{
     padding-top:74px;
 }
