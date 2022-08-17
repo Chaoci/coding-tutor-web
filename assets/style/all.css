@@ -1,0 +1,1310 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&family=Lato&family=Noto+Sans+TC&family=Roboto&family=Rubik&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+html, body {
+  margin: 0 auto;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box {
+  overflow-y: overlay;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #2D2D2D;
+  position: relative;
+}
+
+nav .navbar {
+  padding-right: 12px;
+}
+
+nav .navbar a {
+  color: white;
+  padding-right: 50px;
+}
+
+nav .navbar span {
+  font-size: 16px;
+}
+
+nav .logo {
+  padding-left: 12px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 50%;
+}
+
+nav img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 24px;
+}
+
+nav ul {
+  margin-right: 20px;
+}
+
+nav span {
+  padding-right: 12px;
+}
+
+.navbar-mobile {
+  background-color: #2D2D2D;
+  width: 100%;
+}
+
+.navbar-mobile li {
+  width: 100%;
+}
+
+.navbar-mobile a {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.navbar-mobile a p {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar-mobile ul {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.navbar-mobile span {
+  font-size: 16px;
+}
+
+nav::before {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #62DB54;
+  bottom: 0;
+  width: 50%;
+}
+
+nav::after {
+  position: absolute;
+  content: "";
+  border-bottom: 3px solid #09ACF5;
+  bottom: 0;
+  width: 50%;
+  left: 50%;
+}
+
+.menu {
+  color: #62DB54;
+}
+
+.menu span {
+  cursor: pointer;
+}
+
+@media (min-width: 756px) {
+  nav img {
+    height: 42px;
+  }
+  nav .logo {
+    padding-left: 60px;
+    padding-right: 12px;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.banner {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/bg_home.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  width: 100%;
+}
+
+.banner-phone {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/bg_home_mobile.jpg?raw=true");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 336px;
+  width: 100%;
+}
+
+.gradient-text {
+  /* Create the gradient. */
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-text {
+  padding: 51px 12px;
+  position: relative;
+  border: 1px solid #ffffff;
+  cursor: default;
+}
+
+.banner-text .dot-topright {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+
+.banner-text .dot-topleft {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+
+.banner-text .dot-bottomright {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
+
+.banner-text .dot-bottomleft {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  left: -5px;
+}
+
+.banner-text h1 {
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+}
+
+.banner-text h2 {
+  margin-top: 18px;
+  font-weight: bolder;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+  line-height: 1.2;
+}
+
+.banner-text p {
+  color: #fff;
+  text-align: center;
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.row {
+  padding: 0 12px;
+}
+
+@media (max-width: 992px) {
+  .banner-text h1 {
+    font-size: 22px;
+  }
+  .banner-text h2 {
+    font-size: 22px;
+  }
+  .banner-text p {
+    font-size: 16px;
+  }
+}
+
+.intro {
+  background-color: #2D2D2D;
+  color: gray;
+}
+
+.intro span {
+  font-size: 50px;
+  margin-bottom: 24px;
+}
+
+.intro h3 {
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.intro p {
+  text-align: center;
+  line-height: 26px;
+}
+
+.intro .intro-title {
+  padding: 16px 0;
+  margin-left: 60px;
+  padding-top: 84px;
+  text-align: left;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+  cursor: default;
+  color: white;
+}
+
+.intro .intro-title::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 50px;
+  left: 0;
+  height: 5px;
+  background-color: #62DB54;
+}
+
+.intro-area {
+  padding: 80px 0px;
+}
+
+.intro-code {
+  padding: 0 12px;
+}
+
+.intro-learn {
+  padding: 0 12px;
+}
+
+.intro-place {
+  padding: 0 12px;
+}
+
+.intro-card {
+  padding: 48px 0;
+  border: 1px solid transparent;
+}
+
+.intro-card:hover {
+  background-color: #202020;
+  border: 1px solid #62DB54;
+  border-radius: 12px;
+  color: white;
+  cursor: pointer;
+}
+
+.intro-card:hover span {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 756px) {
+  .intro .intro-title {
+    padding-top: 40px;
+    text-align: center;
+    padding-left: 12px;
+    margin-left: 0%;
+    padding-top: 0;
+    font-size: 22px;
+  }
+  .intro .intro-title::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 25px;
+    left: 50%;
+    height: 5px;
+    background-color: #62DB54;
+  }
+  .intro .intro-title::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    width: 25px;
+    right: 50%;
+    height: 5px;
+    background-color: #62DB54;
+  }
+  .phone-gradient-text {
+    /* Create the gradient. */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+    background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+    background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .intro-card {
+    background-color: #2D2D2D;
+  }
+  .intro-area {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.course {
+  background: #1C1C1C;
+  color: white;
+  padding-bottom: 80px;
+  cursor: default;
+}
+
+.course h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.course h3 {
+  font-size: 28px;
+  line-height: 40px;
+  padding-bottom: 16px;
+}
+
+.course-area {
+  padding-top: 74px;
+}
+
+.course-title {
+  padding: 16px 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+  cursor: default;
+  color: white;
+  position: relative;
+}
+
+.course-title::before {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #62DB54;
+}
+
+.course-title::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background-color: #62DB54;
+}
+
+.course-card {
+  padding: 56px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+.course-card2 {
+  padding: 56px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+.course-card3 {
+  padding: 56px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+.course-card4 {
+  padding: 56px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 12px;
+}
+
+.course-card::before {
+  content: "01";
+  color: #62DB54;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'Azeret Mono', monospace;
+  position: absolute;
+  width: 78px;
+  height: 56px;
+  top: -35px;
+  left: 48px;
+  background-color: #1C1C1C;
+  padding: 8px;
+}
+
+.course-card2::before {
+  content: "02";
+  color: #62DB54;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'Azeret Mono', monospace;
+  position: absolute;
+  width: 78px;
+  height: 56px;
+  top: -35px;
+  left: 48px;
+  background-color: #1C1C1C;
+  padding: 8px;
+}
+
+.course-card3::before {
+  content: "03";
+  color: #62DB54;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'Azeret Mono', monospace;
+  position: absolute;
+  width: 78px;
+  height: 56px;
+  top: -35px;
+  left: 48px;
+  background-color: #1C1C1C;
+  padding: 8px;
+}
+
+.course-card4::before {
+  content: "04";
+  color: #62DB54;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  font-family: 'Azeret Mono', monospace;
+  position: absolute;
+  width: 78px;
+  height: 56px;
+  top: -35px;
+  left: 48px;
+  background-color: #1C1C1C;
+  padding: 8px;
+}
+
+@media (max-width: 767px) {
+  .course-card, .course-card2, .course-card3 {
+    margin-bottom: 50px;
+  }
+  .course {
+    padding-bottom: 40px;
+  }
+  .course-title {
+    padding-top: 40px;
+  }
+  .course-title h3 {
+    font-size: 22px;
+  }
+}
+
+.code {
+  background: #2D2D2D;
+}
+
+.code-genre {
+  padding-left: 24px;
+  margin-top: 48px;
+  padding-bottom: 80px;
+}
+
+.b-padding {
+  padding: 24px 32px;
+  font-size: 18px;
+  line-height: 26px;
+  background-color: #2d2d2d;
+}
+
+.b-padding:hover {
+  background: #2d2d2d;
+}
+
+.code-title {
+  padding: 16px 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+  cursor: default;
+  color: white;
+  position: relative;
+}
+
+.code-title::before {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #62DB54;
+}
+
+.code-title::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background-color: #62DB54;
+}
+
+@media (max-width: 768px) {
+  .code-title {
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 40px;
+  }
+  .code-genre {
+    padding-bottom: 40px;
+    padding-left: 17px;
+    margin-top: 26px;
+  }
+  .b-padding {
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.teacher {
+  background-color: #000000;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.teacher-title {
+  padding: 16px 0;
+  padding-top: 80px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 40px;
+  position: relative;
+  cursor: default;
+  color: white;
+  margin-bottom: 48px;
+}
+
+.teacher-title::before {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #62DB54;
+}
+
+.teacher-title::after {
+  content: "";
+  width: 25px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background-color: #62DB54;
+}
+
+.teacher-card1 {
+  background-color: #2D2D2D;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.teacher-card1:hover {
+  border: 2px solid #62DB54;
+  cursor: pointer;
+}
+
+.teacher-card1 figure {
+  text-align: center;
+}
+
+.teacher-card1 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.teacher-card1 figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+.teacher-card1 h4 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.teacher-card1 .teacher-text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.teacher-card1 .color-text {
+  color: #62DB54;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 37px;
+  margin-bottom: 8px;
+}
+
+.teacher-card1 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+.teacher-card1 .price {
+  margin-top: 16px;
+}
+
+.teacher-card1 .price p {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.teacher-card1 .price span {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.teacher-card2 {
+  background-color: #2D2D2D;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.teacher-card2:hover {
+  border: 2px solid #62DB54;
+  cursor: pointer;
+}
+
+.teacher-card2 figure {
+  text-align: center;
+}
+
+.teacher-card2 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.teacher-card2 figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+.teacher-card2 h4 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.teacher-card2 .teacher-text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.teacher-card2 .color-text {
+  color: #62DB54;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 37px;
+  margin-bottom: 8px;
+}
+
+.teacher-card2 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+.teacher-card2 .price {
+  margin-top: 16px;
+}
+
+.teacher-card2 .price p {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.teacher-card2 .price span {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.teacher-card2 .color-text {
+  margin-top: 8px;
+}
+
+.teacher-card3 {
+  background-color: #2D2D2D;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.teacher-card3:hover {
+  border: 2px solid #62DB54;
+  cursor: pointer;
+}
+
+.teacher-card3 figure {
+  text-align: center;
+}
+
+.teacher-card3 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.teacher-card3 figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+.teacher-card3 h4 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.teacher-card3 .teacher-text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.teacher-card3 .color-text {
+  color: #62DB54;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 37px;
+  margin-bottom: 8px;
+}
+
+.teacher-card3 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+.teacher-card3 .price {
+  margin-top: 16px;
+}
+
+.teacher-card3 .price p {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.teacher-card3 .price span {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.teacher-card3 .color-text {
+  margin-top: 8px;
+}
+
+.teacher-card4 {
+  background-color: #2D2D2D;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  border: 2px solid transparent;
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+.teacher-card4:hover {
+  border: 2px solid #62DB54;
+  cursor: pointer;
+}
+
+.teacher-card4 figure {
+  text-align: center;
+}
+
+.teacher-card4 img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.teacher-card4 figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+.teacher-card4 h4 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.teacher-card4 .teacher-text {
+  border-bottom: 1px solid gray;
+  padding-bottom: 32px;
+  padding-top: 24px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.teacher-card4 .color-text {
+  color: #62DB54;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 37px;
+  margin-bottom: 8px;
+}
+
+.teacher-card4 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+.teacher-card4 .price {
+  margin-top: 16px;
+}
+
+.teacher-card4 .price p {
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.teacher-card4 .price span {
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 8px;
+}
+
+.teacher-card4 .color-text {
+  margin-top: 8px;
+}
+
+.teacher-btn {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  color: white;
+  margin-top: 48px;
+  padding: 8px 32px;
+}
+
+.teacher-btn:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .teacher-title {
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 40px;
+  }
+  .teacher-btn {
+    margin-top: 0px;
+  }
+  .teacher {
+    padding-bottom: 40px;
+  }
+}
+
+.feature {
+  background-color: #1C1C1C;
+  height: 615px;
+}
+
+.feature .row {
+  padding: 0;
+}
+
+.feature-title {
+  position: relative;
+  font-size: 24px;
+  line-height: 35px;
+  color: white;
+  padding-bottom: 16px;
+}
+
+.feature-title::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 50px;
+  left: 0;
+  height: 5px;
+  background-color: white;
+}
+
+.feature-text {
+  position: relative;
+}
+
+.feature-card1 {
+  position: relative;
+  padding-right: 48px;
+  padding-left: 48px;
+  height: 615px;
+}
+
+.feature-card1:hover .feature-title::before {
+  background-color: #62DB54;
+}
+
+.feature-card1:hover span {
+  color: #62DB54;
+}
+
+.feature-card1 span {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.feature-card1 p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+  color: white;
+}
+
+.feature-card1::before {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info01.jpg?raw=true");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-card1:hover::before {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.feature-card2 {
+  position: relative;
+  padding-right: 48px;
+  padding-left: 48px;
+  height: 615px;
+}
+
+.feature-card2:hover .feature-title::before {
+  background-color: #62DB54;
+}
+
+.feature-card2:hover span {
+  color: #62DB54;
+}
+
+.feature-card2 span {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.feature-card2 p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+  color: white;
+}
+
+.feature-card2 .feature-text p {
+  font-size: 17px;
+}
+
+.feature-card2::before {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info02.jpg?raw=true");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-card2:hover::before {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.feature-card3 {
+  position: relative;
+  padding-right: 48px;
+  padding-left: 48px;
+  height: 615px;
+}
+
+.feature-card3:hover .feature-title::before {
+  background-color: #62DB54;
+}
+
+.feature-card3:hover span {
+  color: #62DB54;
+}
+
+.feature-card3 span {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.feature-card3 p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+  color: white;
+}
+
+.feature-card3::before {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info03.jpg?raw=true");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-card3:hover::before {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.feature-card4 {
+  position: relative;
+  padding-right: 48px;
+  padding-left: 48px;
+  height: 615px;
+}
+
+.feature-card4:hover .feature-title::before {
+  background-color: #62DB54;
+}
+
+.feature-card4:hover span {
+  color: #62DB54;
+}
+
+.feature-card4 span {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.feature-card4 p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 32px;
+  color: white;
+}
+
+.feature-card4:hover p {
+  color: #7C7E77;
+}
+
+.feature-card4::before {
+  background-image: url("https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info04.jpg?raw=true");
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feature-card4:hover::before {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+@media (max-width: 576px) {
+  .feature-card1, .feature-card2, .feature-card3, .feature-card4 {
+    height: 263px;
+  }
+  .feature-card1 .feature-text, .feature-card2 .feature-text, .feature-card3 .feature-text, .feature-card4 .feature-text {
+    text-align: center;
+  }
+  .feature-card1 .feature-text h4, .feature-card2 .feature-text h4, .feature-card3 .feature-text h4, .feature-card4 .feature-text h4 {
+    margin-top: -40px;
+  }
+  .feature-title {
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 40px;
+  }
+  .feature-title::before {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: #62DB54;
+  }
+  .feature-title::after {
+    content: "";
+    width: 25px;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    background-color: #62DB54;
+  }
+}
+
+.article {
+  background-color: #1C1C1C;
+  height: 651px;
+}
+
+/*# sourceMappingURL=all.css.map */
