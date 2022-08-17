@@ -1,12 +1,11 @@
 @mixin teacher_card {
     background-color: #2D2D2D;
-    border-radius: 20px;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    border:2px solid transparent;
     &:hover{
         border:2px solid $lightgreen;
         cursor:pointer;
-        .teacher-text{
-            padding-right:22px;
-            padding-left:22px;
     }
     figure{
         text-align: center;
@@ -43,6 +42,19 @@
         font-size: 16px;
         line-height: 24px;
         color:lightgray;
+        font-weight:100;
+    }
+    .price{
+        margin-top: 16px;
+        p{
+            font-size: 32px;
+            line-height: 37px;
+        }
+        span{
+            font-size: 16px;
+            line-height: 24px;
+            margin-right: 8px;
+        }
     }
 }
 @mixin teacher_padding{
@@ -52,8 +64,13 @@
 .teacher{
     background-color:#000000 ;
     color:white;
-    padding-top:80px;
     padding-bottom:80px;
+}
+
+.teacher-title{
+    @include title;
+    @include title_bottom_line;
+    margin-bottom: 48px;
 }
 
 .teacher-card1{
@@ -81,3 +98,41 @@
         margin-top:8px;
     }
 }
+.teacher-btn{
+    @include gradient;
+    color:white;
+    margin-top: 48px;
+    padding:8px 32px;
+    &:hover{
+        color:white;
+    }
+}
+
+// padding right to adjust the padding
+
+.padding-for-card{
+    // padding-right:0;
+}
+@media (max-width:768px) {
+    .teacher-title{
+        @include mobile-title;
+    }
+    .teacher-btn{
+        margin-top: 0px; //因為card 本身有margin-bottom 24px
+    }
+    .teacher{
+        padding-bottom:40px;
+    }
+}
+
+// //rwd tablet mode
+
+// @media (min-width:843px){
+//     .teacher-card4{
+//         .color-text{
+//             margin-top: 37px;
+//         }
+//     }
+// }
+
+// @media (min-width:)

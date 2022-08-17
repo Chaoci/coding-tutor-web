@@ -1,0 +1,164 @@
+
+.feature{
+    background-color: #1C1C1C;
+    height: 615px;
+    .row{  //滿版所以把padding為0
+        padding:0;
+    }
+}
+@mixin feature-padding{
+    padding-right:48px;
+    padding-left:48px;
+}
+@mixin feature-title{
+    font-size: 24px;
+    line-height: 35px;
+    color:white;
+}
+@mixin feature-title-underline{
+    &::before{
+        position:absolute;
+        content:"";
+        bottom:0;
+        width: 50px;
+        left:0;
+        height: 5px;
+        background-color: white;
+    }
+}
+
+@mixin background-setting{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.feature-title{
+    position: relative;
+    @include feature-title;
+    @include feature-title-underline;
+    padding-bottom: 16px;
+}
+
+@mixin feature-card{
+    // @include dark-brightness;
+    @include feature-padding;
+    height: 615px;
+    &:hover{
+        .feature-title::before{
+            background-color: $lightgreen;
+        }
+        span{
+            color:$lightgreen;
+        }
+    }
+    span{
+        font-size: 28px;
+        color:white;
+        margin-bottom: 18px;
+    }
+    p{
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 32px;
+        color:white;
+    }
+}
+
+@mixin for-background{
+    content:"";
+    position:absolute;
+    top:0; 
+    left:0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.3);
+    @include background-setting;
+}
+//  利用偽元素來製作background-image 可以使其她容器內的元素不吃到filter效果
+//  要當作bg容器的::before需加上position:absolute; 同時 w100% h100% content:""; 
+//  bg容器內不要吃filter的容器加上relative;
+.feature-text{
+    position: relative;
+}
+
+// for card1
+.feature-card1{
+    position: relative;
+    @include feature-card;
+}
+.feature-card1::before{
+    background-image: url('https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info01.jpg?raw=true');
+    @include for-background;
+}
+.feature-card1:hover::before{
+    filter:brightness(1);
+}
+
+// for card2
+.feature-card2{
+    position:relative;
+    @include feature-card;
+    .feature-text{
+        p{
+            font-size: 17px;
+        }
+    }
+}
+.feature-card2::before{
+    background-image: url('https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info02.jpg?raw=true');
+    @include for-background;
+}
+.feature-card2:hover::before{
+    filter:brightness(1);
+}
+//for card3
+
+.feature-card3{
+    position:relative;
+    @include feature-card;
+}
+.feature-card3::before{
+    background-image: url('https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info03.jpg?raw=true');
+    @include for-background;
+}
+.feature-card3:hover::before{
+    filter:brightness(1);
+}
+
+//for card4
+
+.feature-card4{
+    position:relative;
+    @include feature-card;
+    &:hover{  // 怕圖片不清楚
+        p{
+            color:#7C7E77;
+        }
+    }
+}
+.feature-card4::before{
+    background-image: url('https://github.com/Chaoci/coding-tutor-web/blob/main/app/assets/images/week6-202207/info04.jpg?raw=true');
+    @include for-background;
+}
+.feature-card4:hover::before{
+    filter:brightness(1);
+}
+
+//rwd
+
+@media (max-width:576px){
+    .feature-card1, .feature-card2, .feature-card3, .feature-card4{
+        height: 263px;
+        .feature-text{
+            text-align: center;
+            h4{
+                margin-top: -40px;
+            }
+        }
+    }
+    .feature-title{
+        @include mobile-title;
+        @include title_bottom_line;
+    }
+}

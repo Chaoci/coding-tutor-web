@@ -23,8 +23,7 @@
 
 @media (max-width:768px){
     .code-title{
-        font-size: 22px;
-        padding-top: 40px;
+        @include mobile_title;
     }
     .code-genre{
         padding-bottom: 40px;

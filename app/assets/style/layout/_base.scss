@@ -54,14 +54,19 @@ a{
 html, body{
 	margin: 0 auto;
 	// font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
-    font-family:'Azeret Mono', monospace, 'Noto Sans TC', sans-serif;
+    font-family:'Noto Sans TC', sans-serif;
 }
+// @mixin azeret{
+// 	font-family: 'Azeret Mono', monospace;
+// }
 
 *,*::after, *::before{
 	box-sizing:border-box;
 }
 
-
+.box{
+	overflow-y: overlay;
+}
 $black:#2D2D2D;
 $lightgreen:#62DB54;
 $skyblue:#09ACF5;

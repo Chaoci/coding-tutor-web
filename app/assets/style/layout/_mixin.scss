@@ -2,19 +2,28 @@
 	background-image: linear-gradient(180deg,$lightgreen,$skyblue);
 }
 
+@mixin gradient-text{
+    background-image: linear-gradient(180deg,$lightgreen,$skyblue);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 @mixin padding{
     padding: 56px;
     position:relative;
 }
 @mixin border {
     border:1px solid white;
-    border-radius: 10px;
+    border-radius: 12px;
 }
 @mixin number{
     color:$lightgreen;
     font-weight: bold;
     font-size: 48px;
     line-height: 56px;
+    font-family: 'Azeret Mono', monospace;
     position: absolute;
     width: 78px;
     height: 56px;
@@ -25,13 +34,18 @@
 }
 @mixin title {
     padding:16px 0;
-    padding-top:84px;
+    padding-top:80px;
     text-align: center;
     font-size: 28px;
     line-height: 40px;
     position:relative;
     cursor: default;
     color:white;
+}
+@mixin mobile_title{ // only write in rwd @media
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 40px;
 }
 
 @mixin title_bottom_line{
@@ -53,4 +67,11 @@
         right:50%;
         background-color: $lightgreen;
     }
+}
+
+@mixin dark-brightness{
+    filter:brightness(.5);
+}
+@mixin light-brightness{
+    filter:brightness(1);
 }
