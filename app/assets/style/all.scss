@@ -1,6 +1,7 @@
 @import './layout/_base.scss';
 @import './layout/mixin';
 @import './layout/_nav.scss';
+@import './layout/footer';
 @import './layout/section-banner';
 @import './layout/intro';
 @import './layout/section-course';
@@ -8,3 +9,4 @@
 @import './layout/section-teacher';
 @import './layout/section-feature';
 @import './layout/section-article';
+@import './layout/section-student';

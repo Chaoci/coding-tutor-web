@@ -111,9 +111,12 @@
 // padding right to adjust the padding
 
 .padding-for-card{
-    // padding-right:0;
+    padding-right:0;
 }
 @media (max-width:768px) {
+    .padding-for-card{
+        padding-left:0;
+    }
     .teacher-title{
         @include mobile-title;
     }
