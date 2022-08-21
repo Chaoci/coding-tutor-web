@@ -27,16 +27,24 @@ var swiper = new Swiper(".course-swiper", {
 
 });
 
-// var swiper2 = new Swiper(".mySwiper", {
-//     effect:'fade',
-//     fadeEffect:{
-//         crossFade:true
-//     },
-//     autoplay: {
-//         delay: 2000,
-//     },
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//     },
-// });
+const swiper1 = new Swiper('.student-swiper', {
+    // Optional parameters
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    autoplay:{
+        delay:1500
+    },
+    
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.student-swiper-button-next',
+      prevEl: '.student-swiper-button-prev',
+    },
+  });

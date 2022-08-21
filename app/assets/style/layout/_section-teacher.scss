@@ -66,6 +66,9 @@
     color:white;
     padding-bottom:80px;
 }
+.teacher-area{
+    padding-left:0;
+}
 
 .teacher-title{
     @include title;
@@ -116,6 +119,10 @@
 @media (max-width:768px) {
     .padding-for-card{
         padding-left:0;
+    }
+    .teacher-area{
+        padding-left: 0;
+        padding-right: 0;
     }
     .teacher-title{
         @include mobile-title;
