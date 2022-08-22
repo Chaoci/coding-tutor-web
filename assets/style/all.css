@@ -1822,6 +1822,19 @@ footer {
 .class-genre-area {
   margin-top: 40px;
   margin-bottom: 48px;
+  overflow: scroll;
+}
+
+.class-genre-area::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.class-genre-area {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .class-wrap {
