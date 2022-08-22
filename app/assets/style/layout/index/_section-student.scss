@@ -3,12 +3,13 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 733px;
+    padding-bottom: 80px;
 }
 
 .student-title{
     @include title;
     @include title_bottom_line;
+    margin-bottom: 48px;
 }
 
 
@@ -217,6 +218,9 @@
     .swiper-pagination {
       position: unset;
       width: auto;
+      @media (max-width:978px) {
+        justify-content: center;
+      }
       .swiper-pagination-bullet {
         background-color: #62DB54;
         opacity: initial;
@@ -239,3 +243,12 @@
       }
     }
   }
+
+@media (max-width:578px){
+  .student{
+    padding-bottom: 40px;
+  }
+  .student-title{
+    @include mobile_title;
+  }
+}

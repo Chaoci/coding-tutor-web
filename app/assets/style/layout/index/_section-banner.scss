@@ -9,6 +9,7 @@
     background-position: center;
     height: 680px;
     width: 100%;
+    margin-top: 91px; //推出被header fixed擋住的空間
 }
 
 .banner-phone{
@@ -17,6 +18,7 @@
     background-size: cover;
     height: 336px;
     width: 100%;
+    margin-top: 73px;
 }
 .gradient-text{
     /* Create the gradient. */

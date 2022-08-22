@@ -40,6 +40,7 @@ const swiper1 = new Swiper('.student-swiper', {
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
+      clickable:true
     },
   
     // Navigation arrows
@@ -48,3 +49,11 @@ const swiper1 = new Swiper('.student-swiper', {
       prevEl: '.student-swiper-button-prev',
     },
   });
+
+
+const menu = document.getElementById('menu');
+const mobile = document.querySelector('.navbar-mobile');
+
+menu.addEventListener('click',function(){
+    mobile.classList.toggle('d-block');
+})

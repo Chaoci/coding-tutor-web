@@ -1,0 +1,163 @@
+.class-nav{
+    margin-top: 91px; //推出被fixed擋住的地方
+    @media (max-width:900px){
+        margin-top:73px;
+    }
+    width: 100%;
+    background-color:#000000;
+    .row{
+        padding:0;
+    }
+}
+.class-btn{
+    padding:16px 32px;
+    background: #1C1C1C;
+    margin-right: 16px;
+    border:1px solid white;
+    color:white;
+    &:hover{
+        border:1px solid $lightgreen;
+        color:$lightgreen;
+    }
+    &:focus{
+        border:1px solid $lightgreen;
+        color:$lightgreen;
+    }
+}
+
+.class-genre-area{
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+@mixin teacher_card_in_course {
+    padding: 48px;
+    background-color: #2D2D2D;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    figure{
+        text-align: center;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    figcaption{
+        font-size: 16px;
+        line-height: 24px;
+        color:gray;
+    }
+    h4{
+        color:white;
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .teacher-text{
+        width: 56%;
+        margin-left: 48px;
+        margin-right: 88px;
+    }
+    .color-text{
+        color:$lightgreen;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 4px;
+        margin-bottom: 8px;
+    }
+    p{
+        font-size: 16px;
+        line-height: 24px;
+        color:lightgray;
+        font-weight:100;
+    }
+}
+.class-wrap{
+    width: 76%;
+}
+.class-btn-area{
+    font-size: 18px;
+    line-height: 26px;
+    flex-direction: column;
+}
+.class-info-area{
+
+    .price{
+        margin-bottom: 16px;
+        @media (max-width:900px){
+            width: 100%;
+            flex-direction: row;
+            br{
+                display: none;
+            }
+            p{
+                margin-top: 48px;
+            }
+        }
+        p{
+            font-size: 36px;
+            font-family: 'Azeret Mono', monospace;
+            line-height: 37px;
+        }
+        span{
+            font-size: 16px;
+        }
+    }
+}
+.class-info{
+    background-color: #1C1C1C;
+    padding:8px 48px;
+    color:white;
+    border:1px solid white;
+    &:hover{
+        color:white;
+        background-color: #1C1C1C;
+    }
+    @media (max-width:990px){
+        padding:8px 16px;
+        width: 50%;
+    }
+}
+
+.class-buy{
+    margin-top: 8px;
+    @include gradient;
+    padding:8px 48px;
+    color:white;
+    &:hover{
+        color:white;
+    }
+    @media (max-width:990px){
+        margin-top:0px;
+        padding:8px 16px;
+        width: 50%;
+    }
+}
+
+
+.class-teacher{
+    @include teacher_card_in_course;
+}
+
+@media (max-width:990px){
+    .class-wrap{
+        width: 100%;
+    }
+    .class-teacher{
+        padding: 24px;
+        flex-direction: column;
+        .teacher-text{
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+    }
+    .class-info-area{
+        width: 100%;
+    }
+    .class-btn-area{
+        flex-direction: row;
+        gap:8px;
+    }
+}

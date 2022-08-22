@@ -33,6 +33,9 @@ nav{
 .navbar-mobile{
     background-color: $black;
     width: 100%;
+    margin-top: 73px;
+    margin-bottom: -73px;
+    display: none;
     li{
         width: 100%;
     }
