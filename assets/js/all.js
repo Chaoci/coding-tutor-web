@@ -38,12 +38,18 @@ var swiper1 = new Swiper('.student-swiper', {
   },
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination',
+    clickable: true
   },
   // Navigation arrows
   navigation: {
     nextEl: '.student-swiper-button-next',
     prevEl: '.student-swiper-button-prev'
   }
+});
+var menu = document.getElementById('menu');
+var mobile = document.querySelector('.navbar-mobile');
+menu.addEventListener('click', function () {
+  mobile.classList.toggle('d-block');
 });
 //# sourceMappingURL=all.js.map

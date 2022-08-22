@@ -109,6 +109,9 @@ nav span {
 .navbar-mobile {
   background-color: #2D2D2D;
   width: 100%;
+  margin-top: 73px;
+  margin-bottom: -73px;
+  display: none;
 }
 
 .navbar-mobile li {
@@ -207,6 +210,7 @@ footer {
   background-position: center;
   height: 680px;
   width: 100%;
+  margin-top: 91px;
 }
 
 .banner-phone {
@@ -215,6 +219,7 @@ footer {
   background-size: cover;
   height: 336px;
   width: 100%;
+  margin-top: 73px;
 }
 
 .gradient-text {
@@ -1486,7 +1491,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 733px;
+  padding-bottom: 80px;
 }
 
 .student-title {
@@ -1498,6 +1503,7 @@ footer {
   position: relative;
   cursor: default;
   color: white;
+  margin-bottom: 48px;
 }
 
 .student-title::before {
@@ -1656,6 +1662,14 @@ footer {
   width: auto;
 }
 
+@media (max-width: 978px) {
+  .student-swiper .swiper-pagination {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .student-swiper .swiper-pagination .swiper-pagination-bullet {
   background-color: #62DB54;
   opacity: initial;
@@ -1682,6 +1696,298 @@ footer {
     -webkit-transform: none;
         -ms-transform: none;
             transform: none;
+  }
+}
+
+@media (max-width: 578px) {
+  .student {
+    padding-bottom: 40px;
+  }
+  .student-title {
+    font-size: 22px;
+    line-height: 32px;
+    padding-top: 40px;
+  }
+}
+
+.join-area {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 80px;
+}
+
+@media (max-width: 578px) {
+  .join-area {
+    padding-bottom: 40px;
+  }
+}
+
+.join {
+  border-radius: 24px;
+  width: 966px;
+  padding: 48px;
+  background-color: #202020;
+}
+
+@media (max-width: 578px) {
+  .join {
+    margin-top: 40px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.join .material-icons {
+  font-size: 100px;
+}
+
+.join-text {
+  margin-left: 48px;
+}
+
+@media (max-width: 578px) {
+  .join-text {
+    margin-left: 0;
+    margin-top: 24px;
+    text-align: center;
+  }
+}
+
+.join-text h3 {
+  font-size: 28px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 578px) {
+  .join-text h3 {
+    margin-bottom: 24px;
+  }
+}
+
+.join-btn {
+  margin-left: 96px;
+  background-color: #202020;
+  padding: 8px 32px;
+}
+
+@media (max-width: 578px) {
+  .join-btn {
+    margin-left: 0;
+    margin-top: 24px;
+  }
+}
+
+.class-nav {
+  margin-top: 91px;
+  width: 100%;
+  background-color: #000000;
+}
+
+@media (max-width: 900px) {
+  .class-nav {
+    margin-top: 73px;
+  }
+}
+
+.class-nav .row {
+  padding: 0;
+}
+
+.class-btn {
+  padding: 16px 32px;
+  background: #1C1C1C;
+  margin-right: 16px;
+  border: 1px solid white;
+  color: white;
+}
+
+.class-btn:hover {
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
+.class-btn:focus {
+  border: 1px solid #62DB54;
+  color: #62DB54;
+}
+
+.class-genre-area {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.class-wrap {
+  width: 76%;
+}
+
+.class-btn-area {
+  font-size: 18px;
+  line-height: 26px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.class-info-area .price {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 900px) {
+  .class-info-area .price {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .class-info-area .price br {
+    display: none;
+  }
+  .class-info-area .price p {
+    margin-top: 48px;
+  }
+}
+
+.class-info-area .price p {
+  font-size: 36px;
+  font-family: 'Azeret Mono', monospace;
+  line-height: 37px;
+}
+
+.class-info-area .price span {
+  font-size: 16px;
+}
+
+.class-info {
+  background-color: #1C1C1C;
+  padding: 8px 48px;
+  color: white;
+  border: 1px solid white;
+}
+
+.class-info:hover {
+  color: white;
+  background-color: #1C1C1C;
+}
+
+@media (max-width: 990px) {
+  .class-info {
+    padding: 8px 16px;
+    width: 50%;
+  }
+}
+
+.class-buy {
+  margin-top: 8px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#62DB54), to(#09ACF5));
+  background-image: -o-linear-gradient(top, #62DB54, #09ACF5);
+  background-image: linear-gradient(180deg, #62DB54, #09ACF5);
+  padding: 8px 48px;
+  color: white;
+}
+
+.class-buy:hover {
+  color: white;
+}
+
+@media (max-width: 990px) {
+  .class-buy {
+    margin-top: 0px;
+    padding: 8px 16px;
+    width: 50%;
+  }
+}
+
+.class-teacher {
+  padding: 48px;
+  background-color: #2D2D2D;
+  border-radius: 24px;
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.class-teacher figure {
+  text-align: center;
+}
+
+.class-teacher img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.class-teacher figcaption {
+  font-size: 16px;
+  line-height: 24px;
+  color: gray;
+}
+
+.class-teacher h4 {
+  color: white;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.class-teacher .teacher-text {
+  width: 56%;
+  margin-left: 48px;
+  margin-right: 88px;
+}
+
+.class-teacher .color-text {
+  color: #62DB54;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.class-teacher p {
+  font-size: 16px;
+  line-height: 24px;
+  color: lightgray;
+  font-weight: 100;
+}
+
+@media (max-width: 990px) {
+  .class-wrap {
+    width: 100%;
+  }
+  .class-teacher {
+    padding: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .class-teacher .teacher-text {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .class-info-area {
+    width: 100%;
+  }
+  .class-btn-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 8px;
   }
 }
 
