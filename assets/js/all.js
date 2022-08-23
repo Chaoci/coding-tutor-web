@@ -46,10 +46,14 @@ var swiper1 = new Swiper('.student-swiper', {
     nextEl: '.student-swiper-button-next',
     prevEl: '.student-swiper-button-prev'
   }
-});
-var menu = document.getElementById('menu');
-var mobile = document.querySelector('.navbar-mobile');
-menu.addEventListener('click', function () {
-  mobile.classList.toggle('d-block');
+}); // const menu = document.getElementById('menu');
+// const mobile = document.querySelector('.navbar-mobile');
+// menu.addEventListener('click',function(){
+//     mobile.classList.toggle('d-block');
+// });
+"use strict";
+
+$("#menu").click(function () {
+  $("#mobile-menu").slideToggle();
 });
 //# sourceMappingURL=all.js.map
