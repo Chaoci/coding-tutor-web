@@ -51,9 +51,10 @@ const swiper1 = new Swiper('.student-swiper', {
   });
 
 
-const menu = document.getElementById('menu');
-const mobile = document.querySelector('.navbar-mobile');
+// const menu = document.getElementById('menu');
+// const mobile = document.querySelector('.navbar-mobile');
 
-menu.addEventListener('click',function(){
-    mobile.classList.toggle('d-block');
-})
+// menu.addEventListener('click',function(){
+//     mobile.classList.toggle('d-block');
+// });
+
